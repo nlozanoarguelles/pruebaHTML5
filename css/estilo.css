@@ -22,9 +22,22 @@ body {
  }
 
  #pie{
+
  	border-top: 2px solid #BEDB39;
+ 	font-size: 10px;
+ 	font-family: Arial;
+ 	color: white;
+ 	text-align: center;
+
  }
 
+ #letra{
+ 	margin-top: 70px;
+ 	font-size:30px;
+ 	font-style: bold;
+ 	font-family: monospace;
+ 	color:#FD7400;
+ }
  h1{
  	text-align: center;
  	font: 80px 'Ewert',verdana,sans-serif;
@@ -38,6 +51,12 @@ body {
  	border:3px solid white;
  	border-radius: 10px;
  }
+
  li:hover{
  	color: black;
+ }
+
+ a{
+ 	text-decoration: none;
+ 	color: inherit;
  }
