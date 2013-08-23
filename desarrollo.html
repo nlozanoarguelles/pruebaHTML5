@@ -21,14 +21,38 @@
 				</header>
 				<section id="area_principal">
 					<article>
-						<p>
+						<h2>
 							DESARROLLO
-						</p> 
+
+						</h2> 
+						<h4>
+							NOTA: Para tener una correcta visualización de la página web la visualización debe hacerse sobre un browser basado en Webkit.
+						</h4>
+						<p>
+							El primer paso que se realizó fue el de plantear como se quería la estructura de la página web. Una vez que estuvo claro el layout deseado se creó un css, "estructura.css", que intenta llevar a cabo esa idea.
+						</p>
+						<p>
+							Posteriormente se escribió el archivo HTML que sirve de base para todos los apartados de la página web. También se realizaron algunas mejoras estéticas que se escribieron en el archivo "estilo.css". Cabe destacar por ejemplo, la inclusión de tipos de letras externos (google fonts) o un efecto hover en los elementos del menú.
+						</p>
+						<p>
+							El menú consta de 3 pestañas que constituyen todo el sitio web, las cuales son: Inicio,Juego y Desarrollo. La primera y la ultima son meramente textuales así que la complejidad unicamente reside en la maquetación que fue el primer paso que se llevó a cabo en el desarrollo. La dificultad reside pues en la implementación del juego.
+						</p>
+						<p>
+							El primer elemento que encontramos en el apartado del juego es un canvas. En este se aloja tanto el menú de selección de cación, como posteriormente una onda sonora que va dibujando la figura correspondiente a cada instante de la canción. La primera dificultad nos la encontramos con la escritura de la letra de la música. Como no tenía experiencia previa en el uso de Javascript opté  hacer uso del formato más estendido para letras de caciones ".lrc", ya que había un librería en github que me sirvió para parsear este tipo de archivo. 
+							<br>
+							Una vez que ya tenemos la letra de la canción en la pantalla nos hace falta que se reproduzca el sonido, cosa aparentemente sencilla en HTML5, y que aparezca la onda sonora. Como el API de sonido de HTML5 no es standard a todos los browser unicamente he conseguido que se visualice correctamente en los sistemas Webkit. Para la implementación de la onda sonara hice uso de la librería "dancer.js".
+						</p>
+						<h3>
+							Conclusiones
+						</h3>
+						<p>
+							Este trabajo me ha servido como toma de contacto con el desarrollo web. Me he dado cuenta durante el desarrollo, que hay un gran problema de incompatibilidades entre los distintos browser, así este trabajo está pensado para Webkit (se que no es lo correcto, pero por falta de tiempo no se ha podido extender al resto de browsers).
+						</p>
 					</article>
 				</section>
 				<nav id="barra_lateral">
 					<ul id="menu_lateral">
-						<a href="index.html"><li>Início</li></a>
+						<a href="index.html"><li>Inicio</li></a>
 						<a href="juego.html"><li>Juego</li></a>
 						<a href="desarrollo.html"><li>Desarrollo</li></a>
 					</ul>
